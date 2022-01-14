@@ -16,11 +16,12 @@ test("gettings users", async () => {
 
 test("creation of invalid user to get rejected", async () => {
 
-  const userData = { usernam: "Rob" }
+  const userData = { usernam: "Rob" } // invalid field "usernam" (=> should be "name")
 
   const response = await postman.post("/users")
     .send(userData);
 
+  // expect that invalid input gets rejected with 400... 
   expect(response.status).toBe(400)
 
 })
