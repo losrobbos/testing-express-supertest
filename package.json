@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node startup.js",
+    "dev": "nodemon startup.js",
     "test": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest"
   },
   "type": "module",
