@@ -1,0 +1,21 @@
+{
+  "name": "tdd-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "supertest": "^6.2.1"
+  }
+}
